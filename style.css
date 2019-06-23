@@ -11,7 +11,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 div{
-    border:1px solid transparent;
+    border:0.5px solid transparent;
 }
 /* ========================Navbar================ */
 .link-item{
@@ -64,18 +64,25 @@ div{
     display: flex;
     justify-content: space-between;
     margin-bottom: 200px;
+    
+}
+.jumbotron-text{
+    margin-top: 5px;
 }
 .jumbotron-image img{
-    width: 467px;
+    width: 500px;
+    margin-top: 70px;
+    margin-right: 140px;
 }
 .maintext{
-    font-size: 70px;
-    font-weight: 900;
+    font-size: 90px;
+    font-weight: bold;
     color: var(--text-color);
 }
 .second-text{
     color: var(--text-color);
     margin-top: 35px;
+    font-size: 22px;
 }
 .button{
     margin-top: 40px;
@@ -110,6 +117,7 @@ div{
     color: white;
     text-align: center;
 }
+/* ============jumbotron2============= */
 .jumbotron2-container{
     text-align: center;
     background-color: #9487b4;
@@ -145,13 +153,16 @@ div{
     display: flex;
     justify-content: center;
 }
+/* =============jumbotron3================ */
 .jumbotron3-container{
-    padding-left: 327px;
+    /* padding-left: 327px;
     padding-right: 327px;
-    padding-top: 46px;
+    padding-top: 46px; */
     text-align: center;
+    justify-content: center;
 }
 .maintext-3{
+    margin-top: 80px;
     font-size: 40px;
     font-weight: bold;
     margin-bottom: 34px;
@@ -185,9 +196,14 @@ div{
     margin-bottom: 25px;
     margin-top: 56px;
 }
+.device-container{
+    padding-left: 65px;
+    padding-right: 105px;
+}
 .device {
     display: flex;
-    justify-content: left;
+    justify-content: center;
+    /* padding-left: 494px; */
 }
 .device p{
     margin-left: 38px;
@@ -196,8 +212,9 @@ div{
     font-weight: bold
 }
 .device .pertama{
-    margin-left: 204px;
+    /* margin-left: 544px; */
 }
+/* ===============jumbotron 4=========== */
 .jumbotron4-container{
     background-color: #7511db;
     background-image: url(image/lets-play.svg);
@@ -224,6 +241,7 @@ div{
     cursor: pointer;
     background-color: white;
 }
+/* =============jumbotron 5==================== */
 .jumbotron5-container{
     background-color:var(--secondary-color);
     padding:80px 105px 50px 105px;
@@ -231,29 +249,241 @@ div{
 .text-perusahaan1{
     display: flex;
     color: white;
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 100px;
+    margin-left:0px; 
+}
+.text-perusahaan2{
+    display: flex;
+    flex: 3;
+    
+}
+.warna{
+    color: white;
+}
+.text-social{
+    display: flex;
+
+    width: 100%;
+ 
+}
+.social-container{
+    flex: 1;
 }
 .text-perusahaan{
     margin-right: 71px;
+
 }
 .social{
+
     margin-left: auto;
 }
-.main{
+.text{
+    width: 171px;
+}
+.text .main{
     color: #9487b4;
     margin-bottom: 15px;
+}
+.text .main:hover{
+    color: #9487b4;
+    cursor: default;
 }
 .text-perusahaan p{
     margin-bottom: 10px;
 }
-.text-perusahaan p:hover{
+.text p:hover{
     color: #1ab752;
+    cursor: pointer;
 }
 .tambahan{
     margin-right: 24px;
-    font-size: 10px;
+    font-size: 12px;
+    color: #9487b4;
+    
+
+
 }
 .contain{
     margin-bottom: 50px;
+}
+.bulat1{
+    border-radius: 50%;
+    background-color:rgb(132, 129, 129);
+    align-items: center;
+    text-align: center;
+    font-size: 2em;
+    margin-right: 20px;
+    width: 50px;
+
+}
+.social{
+    display: flex;
+    width: 100%;
+}
+
+.social .bulat1{
+    color: white;
+}
+.social .bulat1:hover{
+    color:#1ab752;
+    transition: 100ms;
+    cursor: pointer;
+}
+.tambahan .main:hover{
+    cursor: pointer;
+    color: #1ab752;
+}
+/* =========for tablet========== */
+@media only screen and (max-width:991px){
+    .header-container{
+        padding:0px 40px 0px 40px;
+        height: 52px;
+    }
+    .brand {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .brand img{
+        height: 30px;
+    }
+    .links{
+        display:none;
+    }
+    .icon{
+        color:white;
+        width: 100px;
+    }
+    .icon-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .jumbotron-image{
+        display: none;
+    }
+    .jumbotron-container{
+        margin-top: 0px;
+        padding-left: 0px;
+    }
+    .jumbotron-items{
+        margin-top:100px;
+        margin-left: 40px;
+        margin-bottom: 0px;
+    }
+    .maintext{
+        font-size:64px;
+        margin-top: 70px;
+    }
+    .small-text{
+        margin-bottom: 200px;
+        text-align: left;
+        margin-left: 40px;
+        margin-top: 15px;
+    }
+    .jumbotron2-container{
+        Padding: 124px 40px 83px 40px; 
+    }
+    .jumbotron2-text{
+        text-align: left;
+        margin: 0px;
+    }
+    .jumbotron3-container{
+        padding:0px;
+    }
+    .device .pertama{
+        margin-left: 0px;
+    }
+    .jumbotron5-container{
+        padding: 40px 40px 40px 40px;
+    }
+    .text-perusahaan1{
+        flex-direction: column
+    }
+    .brand img{
+        width: 105px;
+    }
+    .contain{
+        flex-direction: row;
+        flex: 1;
+        width: 75%;
+        
+        
+    }
+    .text-social{
+        flex-direction: column;
+        width: 100%;
+    }
+    .bawah{
+        flex:0;
+        
+    }
+    .social-container{
+        margin-top: 100px;
+    }
+    .text-perusahaan{
+        flex:1;
+
+    }
+    .tambahan{
+        width: 100%;
+        flex: 0;
+        margin-right: 20px;
+        font-size: 8px;
+
+    }
+    .tambahan .main{
+        width: 100%;
+    }
+    .text-perusahaan2{
+        display: flex;
+    }
+    .satu{
+        flex: 1;
+    }
+    .dua{
+        flex: 2;
+    }
+    .terakhir{
+        margin-right: 0px;
+    }
+
+}
+@media only screen and (max-width:700px){
+    .button{
+        width: 100%;
+    }
+    .jumbotron-container{
+        padding:0px;
+    }
+    .header-container{
+        padding-left:0px;
+        
+    }
+    .jumbotron-items{
+        margin-left: 0px;
+    }
+    .small-text{
+        margin-left: 0px;
+    }
+    .jumbotron2-container{
+        padding:104px 0px 63px 0px;
+    }
+    .Comenzar{
+        width:100%;
+    }
+    .btn-premium{
+        width: 100%;
+    }
+    .device .pertama{
+        margin-left: 0px;
+    }
+    .btn-free{
+        width: 100%;
+    }
+    .margin{
+        margin-left: 39px;
+    }
 }
